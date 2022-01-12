@@ -13,7 +13,137 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/favicon/9348914577438.jpg" type="image/x-icon">
 </head>
-<body>
-    
+
+<body class="w-full h-screen flex fixed overflow-hidden">
+    <main class="w-full lg:w-11/12 h-full flex flex-col relative">
+        <div id="banner" style="background: none;" class="h-full sm:h-1/2 lg:h-3/5 p-5 bg-cover sm:bg-left bg-center transition duration-500 w-full flex-col flex">
+            <div id="nav" class="w-full flex items-center justify-start h-10">
+                <i class="ico-angle-left bg-cover block w-6 h-6 mr-2 rounded-full"></i>
+                <i class="ico-angle-right bg-cover w-6 block h-6 rounded-full"></i>
+
+                <button id="products-btn" class="px-2 z-10 pb-1 text-white ml-auto cursor-pointer hover:bg-opacity-60 text-sm bg-black bg-opacity-20">products</button>
+                <button class="ico-menu transform w-6 h-6 z-10 ml-2 bg-cover lg:hidden block"></button>
+            </div>
+
+            <div id="brand-profile" class="flex w-full sm:flex-row items-center sm:text-left text-center flex-col m-auto sm:m-0 sm:mt-auto relative">
+                <img class="rounded-full w-32 h-32 mr-7 shadow-md mb-7" src="../assets/images/9348914577438.jpg" alt="chanel">
+                <a href="#" class="text-sm absolute -bottom-10 sm:bottom-0 sm:left-10 hover:underline mt-6 opacity-90">+ Follow</a>
+                <div>
+                    <h1 class="text-5xl font-semibold uppercase">Chanel</h1>
+                    <p class="sm:w-1/2 mt-6 text-sm opacity-80">
+                        Sunt est ex elit sunt eiusmod cillum qui officia. Proident labore anim non ut exercitation id mollit. Et amet aliquip cupidatat ad elit adipisicing ea irure.
+                        Veniam deserunt quis cupidatat sunt
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="products" style="transition: .5s;" class="h-0 opacity-0 sm:opacity-100 z-0 bottom-0 transition duration-500 absolute pt-7 sm:flex flex-col sm:h-1/2 lg:h-2/5 overflow-y-auto w-full lg:px-8 bg-white">
+            <span class="w-full flex justify-between pl-5 pb-2 text-sm items-end h-20 border-b border-black border-opacity-10">
+                <p class="w-2/4">#       PRODUCT</p>
+                <p class="w-1/4">MATERIAL</p>
+                <p class="w-1/4">PRICE</p>
+            </span>
+
+            <div class="w-full flex flex-col">
+                <span class="w-full h-24 flex items-center justify-between border-b border-black border-opacity-10">
+                    <h3 class="text-lg px-3 sm:px-5 font-bold">1</h3>
+                    <div class="flex items-center w-46 mr-auto">
+                        <img class="border border-black border-opacity-10 w-12 h-12 sm:w-16 sm:h-16" src="../assets/images/bouton-de-camelia-bracelet-white-white-gold-diamond-packshot-default-j12065-8845581123614.jpg" alt="">
+                        <h3 class="font-bold sm:text-md text-sm sm:ml-10 ml-3">PRODUCT NAME</h3>
+                    </div>
+
+                    <p class="w-1/5 sm:w-1/4 pl-1 text-xs sm:text-sm mr-3">Silver rhodi, Black Dimonds</p>
+                    
+                    <div class="flex w-1/4 justify-between items-center">
+                        <p class="text-xs sm:text-sm relative ">2500 &euro;</p>
+
+                        <div class="flex sm:flex-row items-center justify-center flex-col">
+                            <button class="ml-auto ">
+                                <i class="ico-plus w-7 h-7 block rounded-full mx-2 bg-cover"></i>
+                                <button class="hidden">Explore</button>
+                                <button class="hidden">Buy</button>
+                            </button>
+                            
+                            <i class="ico-heart block bg-cover w-7 h-7 sm:mt-0 mt-2 mr-0 lg:mr-0 sm:mr-3"></i>
+                        </div>
+                    </div>
+                </span>
+
+                <span class="w-full h-24 flex items-center justify-between border-b border-black border-opacity-10">
+                    <h3 class="text-lg px-3 sm:px-5 font-bold">1</h3>
+                    <div class="flex items-center w-46 mr-auto">
+                        <img class="border border-black border-opacity-10 w-16 h-16" src="../assets/images/bouton-de-camelia-bracelet-white-white-gold-diamond-packshot-default-j12065-8845581123614.jpg" alt="">
+                        <h3 class="font-bold sm:ml-10 ml-3">PRODUCT NAME</h3>
+                    </div>
+
+                    <p class="w-1/3 sm:w-1/4 pl-1 text-sm">Silver rhodi, Black Dimonds</p>
+                    
+                    <div class="flex w-1/4 justify-between items-center">
+                        <p class="text-sm relative left-1.5">2500 &euro;</p>
+
+                        <div class="flex sm:flex-row items-center justify-center flex-col">
+                            <button class="ml-auto ">
+                                <i class="ico-plus w-7 h-7 block rounded-full mx-2 bg-cover"></i>
+                                <button class="hidden">Explore</button>
+                                <button class="hidden">Buy</button>
+                            </button>
+                            
+                            <i class="ico-heart block bg-cover w-7 h-7 sm:mt-0 mt-2 mr-0 lg:mr-0 sm:mr-3"></i>
+                        </div>
+                    </div>
+                </span>
+
+                <span class="w-full h-24 flex items-center justify-between border-b border-black border-opacity-10">
+                    <h3 class="text-lg px-3 sm:px-5 font-bold">1</h3>
+                    <div class="flex items-center w-46 mr-auto">
+                        <img class="border border-black border-opacity-10 w-16 h-16" src="../assets/images/bouton-de-camelia-bracelet-white-white-gold-diamond-packshot-default-j12065-8845581123614.jpg" alt="">
+                        <h3 class="font-bold sm:ml-10 ml-3">PRODUCT NAME</h3>
+                    </div>
+
+                    <p class="w-1/3 sm:w-1/4 pl-1 text-sm">Silver rhodi, Black Dimonds</p>
+                    
+                    <div class="flex w-1/4 justify-between items-center">
+                        <p class="text-sm relative left-1.5">2500 &euro;</p>
+
+                        <div class="flex sm:flex-row items-center justify-center flex-col">
+                            <button class="ml-auto">
+                                <i class="ico-plus w-7 h-7 block rounded-full mx-2 bg-cover"></i>
+                                <button class="hidden">Explore</button>
+                                <button class="hidden">Buy</button>
+                            </button>
+                            
+                            <i class="ico-heart block bg-cover w-7 h-7 sm:mt-0 mt-2 mr-0 lg:mr-0 sm:mr-3"></i>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <div id="sidebar" class="w-full h-full z-20 border-l sm:flex border-black border-opacity-10 transition duration-300 bg-white lg:relative absolute 
+    right-0 sm:w-72 lg:transform-none translate-x-full transform lg:shadow-none shadow-xl lg:w-3/12 lg:flex flex-col">
+
+        <h1 class="text-2xl font-bold p-9">FEATURED COLLECTIONS</h1>
+        <div id="brands" class=" w-full flex flex-col overflow-y-auto items-center justify-start">
+            <span class="sidebar-items w-full">
+                <img class="rounded-full row-1/5 w-16 h-16 mr-5 shadow-md" src="../assets/images/9348914577438.jpg" alt="chanel">
+                <h3 class="text-lg font-semibold h-6 uppercase mt-2">Chanel</h3>
+                <p class="font-semibold text-opacity-40 text-black">3 products</p>
+            </span>
+            <span class="sidebar-items w-full">
+                <img class="rounded-full row-1/5 w-16 h-16 mr-1 shadow-md" src="../assets/images/9348914577438.jpg" alt="chanel">
+                <h3 class="text-lg font-semibold h-6 uppercase mt-2">Chanel</h3>
+                <p class="font-semibold text-opacity-40 text-black">3 products</p>
+            </span>
+            <span class="sidebar-items w-full">
+                <img class="rounded-full row-1/5 w-16 h-16 mr-1 shadow-md" src="../assets/images/9348914577438.jpg" alt="chanel">
+                <h3 class="text-lg font-semibold h-6 uppercase mt-2">Chanel</h3>
+                <p class="font-semibold text-opacity-40 text-black">3 products</p>
+            </span>
+        </div>
+        <button class="ico-menu absolute bottom-6 left-5 transform w-6 h-6 ml-2 bg-cover lg:hidden block"></button>
+    </div>
 </body>
+<script src="../js/main.js" defer type="module"></script>
 </html>
