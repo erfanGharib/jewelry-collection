@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Commissioner;
+    src: url(../assets/fonts/Commissioner-VariableFont_wght.ttf);
+}
+body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
+    font-family: Commissioner, Arial, Helvetica, sans-serif !important;
+    color: rgb(49, 49, 49);
+}
+.sidebar-items {
+    @apply h-24 grid grid-cols-img p-7 content-center hover:bg-black transition duration-300 cursor-pointer hover:bg-opacity-5;
+}
+
+.ico-angle-left {
+    background-image: url(../assets/icons/angle-left.png);
+}
+.ico-angle-right {
+    background-image: url(../assets/icons/angle-right.png);
+}
+.ico-heart {
+    background-image: url(../assets/icons/heart.png);
+}
+.ico-plus {
+    background-image: url(../assets/icons/plus.png);
+}
+.ico-menu {
+    background-image: url(../assets/icons/menu.png);
+}
+
+#banner {
+    background-image: url(../assets/images/banner.png);
+}
+
+.product-preview {
+    height: 100% !important;
+    opacity: 1 !important;
+}
