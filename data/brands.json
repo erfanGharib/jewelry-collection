@@ -1,0 +1,27 @@
+[
+    {
+        "name":"chanel",
+        "profile_img_src":"chanel.jpg",
+        "banner_img_src":"bg-2.jpg"
+    },
+    {
+        "name":"gucci",
+        "profile_img_src":"gucci.jpg",
+        "banner_img_src":"bg-1.jpg"
+    },
+    {
+        "name":"tiffany.co",
+        "profile_img_src":"tiffany.co.jpg",
+        "banner_img_src":"bg-3.jpg"
+    },
+    {
+        "name":"prada",
+        "profile_img_src":"prada.jpg",
+        "banner_img_src":"bg-5.jpg"
+    },
+    {
+        "name":"d&g",
+        "profile_img_src":"d&g.jpg",
+        "banner_img_src":"bg-5.jpg"
+    }
+]

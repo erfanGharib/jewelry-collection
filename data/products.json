@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name":"my way gradiant", 
+            "price":2500, 
+            "material":"Silver rhodi, Black Dimonds",
+            "img_src":"white-diamond-white-gold.jpg"
+        },
+        {
+            "name":"rockaway mini pyramid", 
+            "price":3500, 
+            "material":"silver rhodium, 160 Diamonds",
+            "img_src":"white-gold-diamond.jpg"
+        },
+        {
+            "name":"diamants & or rose", 
+            "price":3800, 
+            "material":"18K pink gold, 102 Diamonds",
+            "img_src":"yellow-gold-diamond.jpg"
+        },
+        {
+            "name":"my way gradiant", 
+            "price":2500, 
+            "material":"Silver rhodi, Black Dimonds",
+            "img_src":"white-diamond-white-gold.jpg"
+        },
+        {
+            "name":"rockaway mini pyramid", 
+            "price":3500, 
+            "material":"silver rhodium, 160 Diamonds",
+            "img_src":"white-gold-diamond.jpg"
+        }
+    ]
+]
