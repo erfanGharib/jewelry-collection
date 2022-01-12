@@ -2,4 +2,5 @@ assets/
 node_modules/
 design/
 package.json
+package-lock.json
 tailwind.config.js
