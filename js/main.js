@@ -1,17 +1,34 @@
 "use strict";
 import product_menu_btn_$cls from './class.js';
+import load_sidebar_sections_$func from '../components/menu-section.js';
+import load_product_$func from '../components/product.js';
 
-document.querySelector('#products-btn').addEventListener('click', ()=>{
+// load json data and convert to json
+const brands_$data = fetch('../data/brands.json').then(res => res.json());
+const products_$data = fetch('../data/products.json').then(res => res.json());
+
+document.body.onload=()=>{
+    load_sidebar_sections_$func();
+    load_product_$func();
+}
+
+
+// set sidebar and product button event listener
+document.querySelector('#products-btn').addEventListener('click', () => {
     new product_menu_btn_$cls(
         'product-preview',
         '#products'
     ).open_target_elem()
 });
 document.querySelectorAll(".ico-menu").forEach(value => {
-    value.addEventListener('click', ()=>{
+    value.addEventListener('click', () => {
         new product_menu_btn_$cls(
             'translate-x-full',
             '#sidebar'
         ).open_target_elem()
     });
 });
+
+// export json data
+export default brands_$data;
+export { products_$data, }
