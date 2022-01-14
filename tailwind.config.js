@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        'img': '40% auto',
+        'img': '25% auto',
       },
       gridRow: {
         '1\/5': '1/5',
