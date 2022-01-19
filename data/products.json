@@ -1,32 +1,121 @@
 [
-    {
-        "name": "my way gradiant",
-        "price": 2500,
-        "material": "Silver rhodi, Black Dimonds",
-        "img_src": "white-diamond-white-gold.jpg"
-    },
-    {
-        "name": "rockaway mini pyramid",
-        "price": 3500,
-        "material": "silver rhodium, 160 Diamonds",
-        "img_src": "white-gold-diamond.jpg"
-    },
-    {
-        "name": "diamants & or rose",
-        "price": 3800,
-        "material": "18K pink gold, 102 Diamonds",
-        "img_src": "yellow-gold-diamond.jpg"
-    },
-    {
-        "name": "my way gradiant",
-        "price": 2500,
-        "material": "Silver rhodi, Black Dimonds",
-        "img_src": "white-diamond-white-gold.jpg"
-    },
-    {
-        "name": "rockaway mini pyramid",
-        "price": 3500,
-        "material": "silver rhodium, 160 Diamonds",
-        "img_src": "white-gold-diamond.jpg"
-    }
+    [
+        {
+            "name": "my way gradiant",
+            "price": 2500,
+            "material": "Silver rhodi, Black Dimonds",
+            "base_url":"chanel/",
+            "img_name": "white-diamond-white-gold.jpg"
+        },
+        {
+            "name": "rockaway mini pyramid",
+            "price": 3500,
+            "material": "silver rhodium, 160 Diamonds",
+            "base_url":"chanel/",
+            "img_name": "white-gold-diamond.jpg"
+        },
+        {
+            "name": "diamants & or rose",
+            "price": 3800,
+            "material": "18K pink gold, 102 Diamonds",
+            "base_url":"chanel/",
+            "img_name": "yellow-gold-diamond.jpg"
+        }
+    ],
+
+    [
+        {
+            "name": "Crystal New Eyes Heart CC Necklace",
+            "price": 2500,
+            "material": "Silver rhodi, Black Dimonds",
+            "base_url":"gucci/",
+            "img_name": "1.jpg"
+        },
+        {
+            "name": "Necklace A96910 Metal Gold",
+            "price": 3500,
+            "material": "silver rhodium, 160 Diamonds",
+            "base_url":"gucci/",
+            "img_name": "2.jpg"
+        },
+        {
+            "name": "Earrings MLT",
+            "price": 3800,
+            "material": "18K pink gold, 102 Diamonds",
+            "base_url":"gucci/",
+            "img_name": "3.jpg"
+        }
+    ],
+
+    [
+        {
+            "name": "Large CC Crystal Pendant Necklace",
+            "price": 2500,
+            "material": "Silver rhodi, Black Dimonds",
+            "base_url":"tiffany.co/",
+            "img_name": "1.jpg"
+        },
+        {
+            "name": "Crystal CC Earrings Gold",
+            "price": 3500,
+            "material": "silver rhodium, 160 Diamonds",
+            "base_url":"tiffany.co/",
+            "img_name": "2.jpg"
+        },
+        {
+            "name": "Pearly White & Black Necklace",
+            "price": 3800,
+            "material": "18K pink gold, 102 Diamonds",
+            "base_url":"tiffany.co/",
+            "img_name": "3.jpg"
+        }
+    ],
+
+    [
+        {
+            "name": "Crystal Necklace",
+            "price": 3000,
+            "material": "Silver rhodi, Black Dimonds",
+            "base_url": "prada/",
+            "img_name": "1.jpg"
+        },
+        {
+            "name": "Textured CC Stud Earrings",
+            "price": 2030,
+            "material": "silver rhodium, 160 Diamonds",
+            "base_url": "prada/",
+            "img_name": "2.jpg"
+        },
+        {
+            "name": "Costume Jewelry Earrings",
+            "price": 2100,
+            "material": "18K pink gold, 102 Diamonds",
+            "base_url": "prada/",
+            "img_name": "3.jpg"
+        }
+    ],
+
+    [
+        {
+            "name": "my way gradiant",
+            "price": 2700,
+            "material": "Silver rhodi, Black Dimonds",
+            "base_url":"d&g/",
+            "img_name": "1.jpg"
+        },
+        {
+            "name": "rockaway mini pyramid",
+            "price": 3200,
+            "material": "silver rhodium, 160 Diamonds",
+            "base_url":"d&g/",
+            "img_name": "2.jpg"
+        },
+        {
+            "name": "diamants & or rose",
+            "price": 2600,
+            "material": "18K pink gold, 102 Diamonds",
+            "base_url":"d&g/",
+            "img_name": "3.jpg"
+        }
+    ]
 ]
