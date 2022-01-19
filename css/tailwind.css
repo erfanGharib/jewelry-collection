@@ -32269,27 +32269,32 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 }
 
 .sidebar-items {
-  display: grid;
+  display: flex;
   height: 6rem;
   cursor: pointer;
-  grid-template-columns: 25% auto;
-  align-content: center;
-}
-
-.sidebar-items:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.05;
-}
-
-.sidebar-items {
+  align-items: center;
   padding: 1.75rem;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
+}
+
+.sidebar-item-bg {
+  width: 100% !important;
+}
+
+.plus-btn {
+  background-image: url(../assets/icons/plus.png) !important;
+  background-size: cover !important;
+  width: 1.75rem !important;
+  opacity: .5;
+  overflow: hidden;
+}
+
+.plus-btn:hover {
+  opacity: 1;
+}
+
+.plus-btn>* {
+  /* display:none !important; */
+  opacity: 0 !important;
 }
 
 .ico-angle-left {

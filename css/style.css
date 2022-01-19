@@ -11,7 +11,25 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
     color: rgb(49, 49, 49);
 }
 .sidebar-items {
-    @apply h-24 grid grid-cols-img p-7 content-center hover:bg-black transition duration-300 cursor-pointer hover:bg-opacity-5;
+    @apply h-24 flex p-7 items-center cursor-pointer;
+}
+.sidebar-item-bg {
+    width: 100% !important;
+}
+.plus-btn {
+    background-image: url(../assets/icons/plus.png) !important;
+    background-size: cover !important;
+    width: 1.75rem !important;
+    opacity: .5;
+    overflow: hidden;
+}
+.plus-btn:hover {
+    opacity: 1;
+}
+.plus-btn>* {
+    /* display:none !important; */
+    opacity: 0 !important;
+
 }
 
 .ico-angle-left {
