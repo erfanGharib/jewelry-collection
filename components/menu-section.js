@@ -6,7 +6,7 @@ export default function load_sidebar_sections_$func() {
     for (let data_num = 0; data_num < 5; data_num++) {
         brands_$data.then(data =>{
             sidebar_$dom.innerHTML += (`
-                <span class="sidebar-items w-full relative">
+                <span class="sidebar-items w-full relative hover:bg-gray-600 hover:bg-opacity-5">
                 <img 
                     class="rounded-full z-10 row-1/5 w-16 h-16 mr-5 shadow-md" 
                     src="../assets/images/${data[data_num].name}/${data[data_num].profile_img_src}" 
@@ -16,7 +16,7 @@ export default function load_sidebar_sections_$func() {
                     <h3 class="ml-3 text-lg font-semibold z-10 h-6 uppercase">${data[data_num].name}</h3>
                     <p class="ml-3 product-length z-10 font-semibold text-opacity-40 text-black"></p>
                 </div>
-                <span style="transition: .4s;" class="w-0 h-full absolute z-0 bg-black bg-opacity-5"></span>
+                <span style="transition: .4s;" class="w-0 h-full left-0 absolute z-0 bg-black bg-opacity-5"></span>
                 </span>
             `)
         })
