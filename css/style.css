@@ -27,9 +27,7 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
     opacity: 1;
 }
 .plus-btn>* {
-    /* display:none !important; */
     opacity: 0 !important;
-
 }
 
 .ico-angle-left {
