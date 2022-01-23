@@ -6899,6 +6899,18 @@ video {
   min-width: 0px;
 }
 
+.min-w-32 {
+  min-width: 128px;
+}
+
+.min-w-72 {
+  min-width: 288px;
+}
+
+.min-w-1500 {
+  min-width: 1500px;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -32299,7 +32311,7 @@ video {
   src: url(../assets/fonts/Commissioner-VariableFont_wght.ttf);
 }
 
-body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
+* {
   font-family: Commissioner, Arial, Helvetica, sans-serif !important;
   color: rgb(49, 49, 49);
 }
@@ -32354,6 +32366,26 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 
 #banner {
   background-image: url(../assets/images/banner.png);
+}
+
+.gucci-banner {
+  background-image: url(../assets/images/gucci/banner.jpg);
+}
+
+.prada-banner {
+  background-image: url(../assets/images/prada/banner.jpg);
+}
+
+.chanel-banner {
+  background-image: url(../assets/images/chanel/banner.jpg);
+}
+
+.tiffany\.co-banner {
+  background-image: url(../assets/images/tiffany.co/banner.jpg);
+}
+
+.d\&g-banner {
+  background-image: url(../assets/images/d&g/banner.jpg);
 }
 
 .product-preview {
@@ -38659,6 +38691,18 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 
   .sm\:min-w-0 {
     min-width: 0px;
+  }
+
+  .sm\:min-w-32 {
+    min-width: 128px;
+  }
+
+  .sm\:min-w-72 {
+    min-width: 288px;
+  }
+
+  .sm\:min-w-1500 {
+    min-width: 1500px;
   }
 
   .sm\:min-w-full {
@@ -69937,6 +69981,18 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
     min-width: 0px;
   }
 
+  .md\:min-w-32 {
+    min-width: 128px;
+  }
+
+  .md\:min-w-72 {
+    min-width: 288px;
+  }
+
+  .md\:min-w-1500 {
+    min-width: 1500px;
+  }
+
   .md\:min-w-full {
     min-width: 100%;
   }
@@ -101211,6 +101267,18 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 
   .lg\:min-w-0 {
     min-width: 0px;
+  }
+
+  .lg\:min-w-32 {
+    min-width: 128px;
+  }
+
+  .lg\:min-w-72 {
+    min-width: 288px;
+  }
+
+  .lg\:min-w-1500 {
+    min-width: 1500px;
   }
 
   .lg\:min-w-full {
@@ -132489,6 +132557,18 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
     min-width: 0px;
   }
 
+  .xl\:min-w-32 {
+    min-width: 128px;
+  }
+
+  .xl\:min-w-72 {
+    min-width: 288px;
+  }
+
+  .xl\:min-w-1500 {
+    min-width: 1500px;
+  }
+
   .xl\:min-w-full {
     min-width: 100%;
   }
@@ -163763,6 +163843,18 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 
   .\32xl\:min-w-0 {
     min-width: 0px;
+  }
+
+  .\32xl\:min-w-32 {
+    min-width: 128px;
+  }
+
+  .\32xl\:min-w-72 {
+    min-width: 288px;
+  }
+
+  .\32xl\:min-w-1500 {
+    min-width: 1500px;
   }
 
   .\32xl\:min-w-full {

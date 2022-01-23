@@ -6,7 +6,7 @@
     font-family: Commissioner;
     src: url(../assets/fonts/Commissioner-VariableFont_wght.ttf);
 }
-body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
+* {
     font-family: Commissioner, Arial, Helvetica, sans-serif !important;
     color: rgb(49, 49, 49);
 }
@@ -49,6 +49,11 @@ body,h1,h2,h3,h4,h5,h6,div,span,button,i,nav {
 #banner {
     background-image: url(../assets/images/banner.png);
 }
+.gucci-banner {background-image: url(../assets/images/gucci/banner.jpg);}
+.prada-banner {background-image: url(../assets/images/prada/banner.jpg);}
+.chanel-banner {background-image: url(../assets/images/chanel/banner.jpg);}
+.tiffany\.co-banner {background-image: url(../assets/images/tiffany.co/banner.jpg);}
+.d\&g-banner {background-image: url(../assets/images/d&g/banner.jpg);}
 
 .product-preview {
     height: 100% !important;
