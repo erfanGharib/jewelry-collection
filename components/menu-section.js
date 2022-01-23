@@ -1,6 +1,19 @@
 import brands_$data, {products_$data} from '../js/main.js';
 import load_product_$func from './product.js';
 let sidebar_$dom = document.querySelector('#brands');
+let item_index = 0;
+
+const banner_sliders_move_$obj = {
+    bannerBg: 1500,
+    profileImg: 128,
+    brandName: 288
+}
+const product_sliders_move_$obj = {
+    img: null,
+    name: null,
+    material: null,
+    price: null
+}
 
 export default function load_sidebar_sections_$func() {
     for (let data_num = 0; data_num < 5; data_num++) {
@@ -27,11 +40,22 @@ export default function load_sidebar_sections_$func() {
 
             let sidebar_items_$dom = document.querySelectorAll('.sidebar-items');
             sidebar_items_$dom[data_num].addEventListener('click', function() {
-                for (let index = 0; index < 5; index++) {
-                    sidebar_items_$dom[index].lastElementChild.classList.remove('sidebar-item-bg');
-                }
+                sidebar_items_$dom[item_index].lastElementChild.classList.remove('sidebar-item-bg');
                 this.lastElementChild.classList.add('sidebar-item-bg');
+
                 load_product_$func(data_num);
+
+                document.querySelector("#bannerBg").style.right=(
+                    `${banner_sliders_move_$obj.bannerBg * data_num}px`
+                )
+                document.querySelector("#profileImg").style.right=(
+                    `${banner_sliders_move_$obj.profileImg * data_num}px`
+                )
+                document.querySelector("#brandName").style.right=(
+                    `${banner_sliders_move_$obj.brandName * data_num}px`
+                )
+
+                item_index=data_num;
             })
         })
     }
