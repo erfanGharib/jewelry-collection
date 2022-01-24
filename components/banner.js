@@ -15,7 +15,7 @@ export default function load_banner_$func() {
                 alt="${data[index].name}"
             >`;
 
-            brand_info+=`<p class="absolute top-0 left-0">${data[index].info}</p>`
+            brand_info+=`<p style="transition:1.5s;" class="brand-info absolute opacity-0 top-0 left-0">${data[index].info}</p>`
         });
 
         banner_$dom.innerHTML+=(`
@@ -31,18 +31,18 @@ export default function load_banner_$func() {
                 </span>
 
                 <a href="#" class="text-sm absolute -bottom-10 sm:bottom-0 sm:left-10 hover:underline opacity-90">+ Follow</a>
-                <div>
+                <div class="w-2/5">
                     <span class="w-72 block overflow-hidden">
                         <span id="brandName" style="transition:1.5s;" class="relative right-0 flex items-center">${title_slider}</span>
                     </span>
                     
-                    <span class="sm:w-1/3 mt-6 opacity-80">
-                        <span class="relative text-sm">
-                            ${brand_info}
-                        </span>
+                    <span class="sm:w-4/5 mt-6 h-22 block opacity-80 relative text-sm">
+                        ${brand_info}
                     </span>
                 </div>
             </div>
         `)
+
+        document.querySelectorAll('.brand-info')[0].classList.remove('opacity-0');
     })
 }
