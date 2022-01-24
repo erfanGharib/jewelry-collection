@@ -1,6 +1,6 @@
 import brands_$data from '../js/main.js';
 let banner_$dom = document.querySelector('#banner');
-let bg_img_slider='', title_slider='', profile_img_slider='';
+let bg_img_slider='', title_slider='', profile_img_slider='', brand_info='';
 
 export default function load_banner_$func() {
     brands_$data.then((data)=>{
@@ -14,6 +14,8 @@ export default function load_banner_$func() {
                 src="../assets/images/${data[index].name}/${data[index].profile_img_src}"
                 alt="${data[index].name}"
             >`;
+
+            brand_info+=`<p class="absolute top-0 left-0">${data[index].info}</p>`
         });
 
         banner_$dom.innerHTML+=(`
@@ -34,10 +36,11 @@ export default function load_banner_$func() {
                         <span id="brandName" style="transition:1.5s;" class="relative right-0 flex items-center">${title_slider}</span>
                     </span>
                     
-                    <p class="sm:w-1/2 mt-6 text-sm opacity-80">
-                        Sunt est ex elit sunt eiusmod cillum qui officia. Proident labore anim non ut exercitation id mollit. Et amet aliquip cupidatat ad elit adipisicing ea irure.
-                        Veniam deserunt quis cupidatat sunt
-                    </p>
+                    <span class="sm:w-1/3 mt-6 opacity-80">
+                        <span class="relative text-sm">
+                            ${brand_info}
+                        </span>
+                    </span>
                 </div>
             </div>
         `)
