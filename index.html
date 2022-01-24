@@ -13,6 +13,7 @@
 
 <body class="w-full h-screen flex fixed overflow-hidden">
     <main class="w-full lg:w-11/12 h-full flex flex-col relative">
+        <div id="banner" style="background: none;" class="h-full sm:h-1/2 lg:h-3/5 p-5 bg-cover sm:bg-left bg-center transition duration-500 w-full flex-col flex">
             <div id="nav" class="w-full flex items-center justify-start h-10">
                 <button class="ico-angle-left opacity-20 hover:opacity-60 bg-cover block w-6 h-6 mr-2 rounded-full"></button>
                 <button class="ico-angle-right opacity-20 hover:opacity-60 bg-cover w-6 block h-6 rounded-full"></button>
@@ -20,20 +21,9 @@
                 <button id="products-btn" class="px-2 z-10 pb-1 text-white ml-auto cursor-pointer hover:bg-opacity-60 text-sm bg-black bg-opacity-20">products</button>
                 <button class="ico-menu opacity-20 hover:opacity-60 transform w-6 h-6 z-10 ml-2 bg-cover lg:hidden block"></button>
             </div>
-
-            <!-- <div id="brand-profile" class="flex w-full sm:flex-row items-center sm:text-left text-center flex-col m-auto sm:m-0 sm:mt-auto relative">
-                <a href="#" class="text-sm absolute -bottom-10 sm:bottom-0 sm:left-10 hover:underline mt-6 opacity-90">+ Follow</a>
-                <div>
-                    <h1 class="text-5xl font-semibold uppercase">Chanel</h1>
-                    <p class="sm:w-1/2 mt-6 text-sm opacity-80">
-                        Sunt est ex elit sunt eiusmod cillum qui officia. Proident labore anim non ut exercitation id mollit. Et amet aliquip cupidatat ad elit adipisicing ea irure.
-                        Veniam deserunt quis cupidatat sunt
-                    </p>
-                </div>
-            </div> -->
         </div>
 
-        <div id="products" style="transition: .5s;" class="opacity-0 sm:opacity-100 z-0 bottom-0 transition duration-500 absolute pt-7 sm:flex flex-col h-1/2 overflow-y-auto w-full lg:px-8 bg-white">
+        <div id="products" style="transition: .5s;" class="opacity-0 sm:opacity-100 z-0 bottom-0 transition duration-500 absolute pt-7 sm:flex flex-col h-2/5 overflow-y-auto w-full lg:px-8 bg-white">
             <span class="w-full flex justify-between pl-5 pb-2 text-sm items-end h-20 border-b border-black border-opacity-10">
                 <p class="w-2/4">#       PRODUCT</p>
                 <p class="w-1/4">MATERIAL</p>

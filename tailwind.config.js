@@ -21,7 +21,10 @@ module.exports = {
         32: '128px',
         1500: '1500px',
         72: '288px'
-      }
+      },
+      height: {
+        22:'5.5rem'
+      },
     }
   },
   variants: {
