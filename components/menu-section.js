@@ -1,7 +1,7 @@
 import brands_$data, {products_$data} from '../js/main.js';
 import load_product_$func from './product.js';
 let sidebar_$dom = document.querySelector('#brands');
-let item_index = 0;
+let sidebar_item_index = 0;
 
 const banner_sliders_move_$obj = {
     bannerBg: 1500,
@@ -40,10 +40,10 @@ export default function load_sidebar_sections_$func() {
 
             let sidebar_items_$dom = document.querySelectorAll('.sidebar-items');
             sidebar_items_$dom[data_num].addEventListener('click', function() {
-                sidebar_items_$dom[item_index].lastElementChild.classList.remove('sidebar-item-bg');
+                sidebar_items_$dom[sidebar_item_index].lastElementChild.classList.remove('sidebar-item-bg');
                 this.lastElementChild.classList.add('sidebar-item-bg');
 
-                load_product_$func(data_num);
+                // load_product_$func(data_num);
 
                 document.querySelector("#bannerBg").style.right=(
                     `${banner_sliders_move_$obj.bannerBg * data_num}px`
@@ -54,8 +54,10 @@ export default function load_sidebar_sections_$func() {
                 document.querySelector("#brandName").style.right=(
                     `${banner_sliders_move_$obj.brandName * data_num}px`
                 )
+                document.querySelectorAll('.brand-info')[sidebar_item_index].classList.add('opacity-0');
+                document.querySelectorAll('.brand-info')[data_num].classList.remove('opacity-0');
 
-                item_index=data_num;
+                sidebar_item_index=data_num;
             })
         })
     }
