@@ -6903,12 +6903,28 @@ video {
   min-width: 0px;
 }
 
+.min-w-12 {
+  min-width: 3rem;
+}
+
+.min-w-16 {
+  min-width: 4rem;
+}
+
 .min-w-32 {
   min-width: 128px;
 }
 
 .min-w-72 {
   min-width: 288px;
+}
+
+.min-w-80 {
+  min-width: 20rem;
+}
+
+.min-w-96 {
+  min-width: 24rem;
 }
 
 .min-w-1500 {
@@ -38701,12 +38717,28 @@ video {
     min-width: 0px;
   }
 
+  .sm\:min-w-12 {
+    min-width: 3rem;
+  }
+
+  .sm\:min-w-16 {
+    min-width: 4rem;
+  }
+
   .sm\:min-w-32 {
     min-width: 128px;
   }
 
   .sm\:min-w-72 {
     min-width: 288px;
+  }
+
+  .sm\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .sm\:min-w-96 {
+    min-width: 24rem;
   }
 
   .sm\:min-w-1500 {
@@ -69993,12 +70025,28 @@ video {
     min-width: 0px;
   }
 
+  .md\:min-w-12 {
+    min-width: 3rem;
+  }
+
+  .md\:min-w-16 {
+    min-width: 4rem;
+  }
+
   .md\:min-w-32 {
     min-width: 128px;
   }
 
   .md\:min-w-72 {
     min-width: 288px;
+  }
+
+  .md\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .md\:min-w-96 {
+    min-width: 24rem;
   }
 
   .md\:min-w-1500 {
@@ -101285,12 +101333,28 @@ video {
     min-width: 0px;
   }
 
+  .lg\:min-w-12 {
+    min-width: 3rem;
+  }
+
+  .lg\:min-w-16 {
+    min-width: 4rem;
+  }
+
   .lg\:min-w-32 {
     min-width: 128px;
   }
 
   .lg\:min-w-72 {
     min-width: 288px;
+  }
+
+  .lg\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .lg\:min-w-96 {
+    min-width: 24rem;
   }
 
   .lg\:min-w-1500 {
@@ -132577,12 +132641,28 @@ video {
     min-width: 0px;
   }
 
+  .xl\:min-w-12 {
+    min-width: 3rem;
+  }
+
+  .xl\:min-w-16 {
+    min-width: 4rem;
+  }
+
   .xl\:min-w-32 {
     min-width: 128px;
   }
 
   .xl\:min-w-72 {
     min-width: 288px;
+  }
+
+  .xl\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .xl\:min-w-96 {
+    min-width: 24rem;
   }
 
   .xl\:min-w-1500 {
@@ -163869,12 +163949,28 @@ video {
     min-width: 0px;
   }
 
+  .\32xl\:min-w-12 {
+    min-width: 3rem;
+  }
+
+  .\32xl\:min-w-16 {
+    min-width: 4rem;
+  }
+
   .\32xl\:min-w-32 {
     min-width: 128px;
   }
 
   .\32xl\:min-w-72 {
     min-width: 288px;
+  }
+
+  .\32xl\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .\32xl\:min-w-96 {
+    min-width: 24rem;
   }
 
   .\32xl\:min-w-1500 {
