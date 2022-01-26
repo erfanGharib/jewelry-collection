@@ -46,9 +46,6 @@
     background-image: url(../assets/icons/menu.png);
 }
 
-#banner {
-    background-image: url(../assets/images/banner.png);
-}
 .gucci-banner {background-image: url(../assets/images/gucci/banner.jpg);}
 .prada-banner {background-image: url(../assets/images/prada/banner.jpg);}
 .chanel-banner {background-image: url(../assets/images/chanel/banner.jpg);}
@@ -58,6 +55,7 @@
 .product-preview {
     height: 100% !important;
     opacity: 1 !important;
+    z-index: 5 !important;
 }
 
 .transition-1\/5 {

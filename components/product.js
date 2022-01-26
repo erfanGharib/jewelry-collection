@@ -25,9 +25,13 @@ export default function load_product_$func() {
                 x=product_index;
             });
 
-            let product_sections_child_$dom = document.createElement('span');
-            product_sections_child_$dom.class='';
-            product_sections_child_$dom.innerHTML = (`
+            let product_sections_child = document.createElement('span');
+            product_sections_child.classList.add(
+                'w-full', 'h-24', 'flex', 
+                'items-center', 'justify-between', 'border-b', 
+                'border-black', 'border-opacity-10'
+            );
+            product_sections_child.innerHTML = (`
                 <h3 class="text-lg px-3 sm:px-5 font-bold">${x+=1}</h3>
 
                 <div class="overflow-hidden h-12 min-w-12 w-12 mr-auto">
@@ -36,7 +40,7 @@ export default function load_product_$func() {
                     </span>
                 </div>
 
-                <div class="ml-3 overflow-hidden flex items-center w-96 mr-auto">
+                <div class="ml-3 overflow-hidden flex items-center w-72 md:w-96 mr-auto">
                     <span class="transition-1/5 prdctName relative right-0 flex">
                         ${name_slider}
                     </span>
@@ -65,48 +69,7 @@ export default function load_product_$func() {
                     </div>
                 </div>
             `)
-            product_sections_$dom.appendChild(product_sections_child_$dom);
-
-            // product_sections_$dom.innerHTML += (`
-            //     <span class="w-full h-24 flex items-center justify-between border-b border-black border-opacity-10">
-            //         <h3 class="text-lg px-3 sm:px-5 font-bold">${x+=1}</h3>
-
-            //         <div class="overflow-hidden h-12 min-w-12 w-12 mr-auto">
-            //             <span class="transition-1/5 prdctImg relative right-0 flex h-full">
-            //                 ${img_slider}
-            //             </span>
-            //         </div>
-
-            //         <div class="ml-3 overflow-hidden flex items-center w-96 mr-auto">
-            //             <span class="transition-1/5 prdctName relative right-0 flex">
-            //                 ${name_slider}
-            //             </span>
-            //         </div>
-
-            //         <div class="relative overflow-hidden flex items-center w-56 mr-4">
-            //             <span class="transition-1/5 prdctMaterial relative right-0 flex">
-            //                 ${material_slider}
-            //             </span>
-            //         </div>                    
-            
-            //         <div class="flex w-1/4 justify-between items-center">
-            //             <div class="overflow-hidden flex items-center w-16 ml-1.5 mr-auto">
-            //                 <span class="transition-1/5 prdctPrice relative right-0 flex">
-            //                     ${price_slider}
-            //                 </span>
-            //             </div>
-
-            //             <div class="flex sm:flex-row items-center justify-center flex-col">
-            //                 <button onclick="this.classList.toggle('plus-btn')" class="plus-btn rounded-full mx-2 h-7 flex">
-            //                     <span style="transition:.3s" class="opacity-100 h-7 py-1 px-2 text-sm bg-gray-200 text-gray-400 hover:text-gray-700">Buy</span>
-            //                     <span style="transition:.3s" class="opacity-100 h-7 py-1 px-2 text-sm bg-black hover:bg-opacity-70 text-white">Explore</span>
-            //                 </button>
-                
-            //                 <button class="opacity-50 hover:opacity-100 ico-heart block bg-cover w-7 h-7 sm:mt-0 mt-2 mr-0 lg:mr-0 sm:mr-3"></button>
-            //             </div>
-            //         </div>
-            //     </span>
-            // `)
+            product_sections_$dom.appendChild(product_sections_child);
 
             img_slider = '';
             name_slider = '';

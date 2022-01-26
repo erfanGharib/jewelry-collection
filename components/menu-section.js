@@ -18,8 +18,12 @@ export default function load_sidebar_sections_$func() {
     brands_$data.then(data =>{
         data.forEach((value, data_num) => {
             // load all sidebar items
-            sidebar_$dom.innerHTML += (`
-                <span class="sidebar-items w-full relative hover:bg-gray-600 hover:bg-opacity-5">
+            const sidebar_childs = document.createElement('span');
+            sidebar_childs.classList.add(
+                'sidebar-items', 'w-full', 'relative', 
+                'hover:bg-gray-600', 'hover:bg-opacity-5'
+            )
+            sidebar_childs.innerHTML = (`
                 <img 
                     class="rounded-full z-10 row-1/5 w-16 h-16 mr-5 shadow-md" 
                     src="../assets/images/${value.name}/${value.profile_img_src}" 
@@ -30,8 +34,8 @@ export default function load_sidebar_sections_$func() {
                     <p class="ml-3 product-length z-10 font-semibold text-opacity-40 text-black"></p>
                 </div>
                 <span style="transition: .4s;" class="w-0 h-full left-0 absolute z-0 bg-black bg-opacity-5"></span>
-                </span>
             `)
+            sidebar_$dom.appendChild(sidebar_childs);
 
             // get each brand product length
             products_$data.then(data=>{

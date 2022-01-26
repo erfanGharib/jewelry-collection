@@ -21,12 +21,14 @@ document.body.onload=async ()=>{
             '#products'
         ).open_target_elem()
     });
-    document.querySelector(".ico-menu").addEventListener('click', ()=> {
-        new product_menu_btn_$cls(
-            'translate-x-full',
-            '#sidebar'
-        ).open_target_elem()
-    });
+    document.querySelectorAll(".ico-menu").forEach((value)=>{
+        value.addEventListener('click', ()=> {
+            new product_menu_btn_$cls(
+                'translate-x-full',
+                '#sidebar'
+            ).open_target_elem()
+        });
+    })
 }
 
 // export json data
