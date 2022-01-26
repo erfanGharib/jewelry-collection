@@ -10,7 +10,7 @@ const banner_sliders_move_$obj = [
 const product_sliders_move_$obj = [
     {id: 'prdctImg', move: 3,},
     {id: 'prdctName', move: 24,},
-    {id: 'prdctMaterial', move: 20,},
+    {id: 'prdctMaterial', move: 14,},
     {id: 'prdctPrice', move: 4,}
 ]
 

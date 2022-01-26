@@ -15,20 +15,18 @@ document.body.onload=async ()=>{
     await load_sidebar_sections_$func();
 
     // set sidebar and product button event listener
-    await setTimeout(() => {
-        document.querySelector('#products-btn').addEventListener('click', ()=> {
-            new product_menu_btn_$cls(
-                'product-preview',
-                '#products'
-            ).open_target_elem()
-        });
-        document.querySelector(".ico-menu").addEventListener('click', ()=> {
-            new product_menu_btn_$cls(
-                'translate-x-full',
-                '#sidebar'
-            ).open_target_elem()
-        });
-    }, 2000);
+    document.querySelector('#products-btn').addEventListener('click', ()=> {
+        new product_menu_btn_$cls(
+            'product-preview',
+            '#products'
+        ).open_target_elem()
+    });
+    document.querySelector(".ico-menu").addEventListener('click', ()=> {
+        new product_menu_btn_$cls(
+            'translate-x-full',
+            '#sidebar'
+        ).open_target_elem()
+    });
 }
 
 // export json data
