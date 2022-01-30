@@ -1,4 +1,5 @@
 # Jewelry Collection
+![Design preview for the todo app](jewelry-collection-preview.png)
 - Full responsive page show case jewelry
 - All brands data load localy from json file
 - All products data load localy from json file
