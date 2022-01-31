@@ -8,3 +8,5 @@
 - Challenge my self
 ## What does it written with?
 - This project written with Tailwind.css and Vanila.js
+## Project Status
+Completed
