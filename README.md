@@ -7,6 +7,9 @@
 - Practicing special animations
 - Challenge my self
 ## What does it written with?
-- This project written with Tailwind.css and Vanila.js
+- Tailwind.css
+- Vanila.js
+## Link
+https://jewelry-collection.vercel.app/
 ## Project Status
 Completed
